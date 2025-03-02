@@ -1,8 +1,9 @@
 body {
-    background-color: #FF0000 !important; /* Ярко-красный с приоритетом */
     color: white;
-    font-family: "Arial", sans-serif !important;
+    font-family: "Arial", sans-serif;
     text-align: center;
+    animation: gradient 5s infinite alternate;
+    transition: background 1s ease-in-out;
 }
 
 h1 {
@@ -18,13 +19,9 @@ input, button {
 .file-list {
     margin-top: 20px;
 }
-@keyframes gradient {
-  0% { background: red; }
-  50% { background: yellow; }
-  100% { background: green; }
-}
 
-body {
-  animation: gradient 5s infinite alternate;
-  transition: background 1s ease-in-out;
+@keyframes gradient {
+    0% { background: red; }
+    50% { background: yellow; }
+    100% { background: green; }
 }
